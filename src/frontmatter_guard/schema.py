@@ -56,6 +56,7 @@ PLUGIN_KEYS = frozenset({
     "scripts",
     "engines",
     "funding",
+    "permissions",
 })
 
 KNOWN_KEYS = SKILL_KEYS | PLUGIN_KEYS
