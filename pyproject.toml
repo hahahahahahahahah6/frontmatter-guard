@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frontmatter-guard"
+version = "0.1.0"
+description = "Semantic linter for Claude Code skill/plugin frontmatter — catches silent key typos official validators miss"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "hao li" }]
+keywords = ["claude-code", "frontmatter", "linter", "skills", "plugins", "developer-tools"]
+
+[project.scripts]
+frontmatter-guard = "frontmatter_guard.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/hahahahahahahahah6/frontmatter-guard"
+
+[tool.setuptools.packages.find]
+where = ["src"]
